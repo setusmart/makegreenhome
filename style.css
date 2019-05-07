@@ -1,0 +1,211 @@
+body {margin: 0 ; padding:0;  font-family: 'Paprika', cursive;  }
+.design  {  margin-top: -50px; }
+.design i{position: relative;top:-58px; left: -200px; background-color: white; font-size: 12px; }
+ #twitter{position: absolute;  right: 10px;top:10px; width: 25px; height: 25px;}
+  #instagram{position: absolute;right: 50px;top:10px;width: 25px; height: 25px;}
+  #facebook{position: absolute;right: 90px; top:10px;width: 25px; height: 25px;}
+ 
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  margin-top: -110px; width: 1100px; margin-left: 220px; border-radius: 20%; box-shadow: 2px 2px 2px 2px black;
+}
+
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 10px 100px;
+  text-decoration: none;
+  
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 10px 50px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover,  .dropbtn:hover {
+  background-color: #419a1c;
+  border-radius: 50%; transition: 0.8s;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #419a1c;
+  color: white;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.indoor-container h1{ text-align: center; font-family: 'Paprika', cursive;}
+.indoor-body{display: flex; flex-wrap: wrap;justify-content: center; font-size: 13px; font-family: 'Paprika', cursive;}
+
+.indoor-body>div{ padding: 12px;  margin: 10px; border: 2px dotted #001f3f; text-align: center;}
+.indoor-body img{ width:300px; height: 250px; transition: 1s;}
+.indoor-body img:hover{opacity: .9; transform: scale(1.1);  }
+
+.container_areca_palm_popup, .container_betel_leaf_popup, .container_stromanthe_triostar_popup, 
+.container_jade_popup,.container_lucky_bamboo_popup, .container_dracena_compacta_popup,
+.container_thuja_popup,.container_fan_palm_popup, .container_holy_basil_popup, .container_croton_popup
+{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 100; /* Sit on top */
+  padding: 100px 50px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgb(0,0,0); ; /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.body_areca_palm_popup, .body_betel_leaf_popup, .body_stromanthe_triostar_popup, .body_jade_popup, .body_lucky_bamboo_popup,
+.body_dracena_compacta_popup, .body_thuja_popup, .body_fan_palm_popup, .body_holy_basil_popup, .body_croton_popup
+{
+  background-color: white;
+  margin: auto;
+  padding: 20px;
+  border: 2px solid black;
+  width: 80%;
+  height: 60%;
+  overflow: auto;
+}
+
+/* The Close Button */
+.close_areca_palm_popup,.close_betel_leaf_popup, .close_stromanthe_triostar_popup, .close_jade_popup,.close_lucky_bamboo_popup,
+ .close_dracena_compacta_popup, .close_thuja_popup, .close_fan_palm_popup, .close_holy_basil_popup, .close_croton_popup
+ {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close_areca_palm_popup:hover, .close_areca_palm_popup:focus, 
+.close_betel_leaf_popup:hover,.close_betel_leaf_popup:focus,
+.close_stromanthe_triostar_popup:hover, .close_stromanthe_triostar_popup:focus, 
+.close_jade_popup:hover, .close_jade_popup:focus,
+.close_lucky_bamboo_popup:hover, .close_lucky_bamboo_popup:focus,
+.close_dracena_compacta_popup:hover, .close_dracena_compacta_popup:focus,
+.close_thuja_popup:hover, .close_thuja_popup:focus,
+.close_fan_palm_popup:hover, .close_fan_palm_popup:focus,
+.close_holy_basil_popup:hover, .close_holy_basil_popup:focus,
+.close_croton_popup:hover, .close_croton_popup:focus
+{
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+.inside_body_areca_palm_popup,.inside_body_betel_leaf_popup, .inside_body_stromanthe_triostar_popup,.inside_body_jade_popup,
+.inside_body_lucky_bamboo_popup,.inside_body_dracena_compacta_popup,.inside_body_thuja_popup, .inside_body_fan_palm_popup,
+.inside_body_holy_basil_popup, .inside_body_croton_popup
+{display: flex;  font-family: 'Paprika', cursive;   }
+.inside_body_areca_palm_popup >div,.inside_body_betel_leaf_popup>div, .inside_body_stromanthe_triostar_popup>div,
+.inside_body_jade_popup>div,.inside_body_lucky_bamboo_popup>div,.inside_body_dracena_compacta_popup>div,
+.inside_body_thuja_popup>div, .inside_body_fan_palm_popup>div, .inside_body_holy_basil_popup>div, .inside_body_croton_popup>div
+{ padding: 10px; width: 100%; height: 100%; }
+.inside_body_areca_palm_popup p, .inside_body_betel_leaf_popup p, .inside_body_stromanthe_triostar_popup p,
+.inside_body_jade_popup p,.inside_body_lucky_bamboo_popup p,.inside_body_dracena_compacta_popup p,
+.inside_body_thuja_popup p,.inside_body_fan_palm_popup p, .inside_body_holy_basil_popup p,.inside_body_croton_popup p
+{ font-size: 12px; word-spacing: 2px; letter-spacing: 2px;  text-align: justify; font-weight:590;}
+
+
+/*OUTDOOR PLANTS*/
+.outdoor-container h1{ text-align: center; font-family: 'Paprika', cursive;}
+.outdoor-body{display: flex; flex-wrap: wrap;justify-content: center; font-size: 13px; font-family: 'Paprika', cursive;}
+.outdoor-body>div{ padding: 12px;  margin: 10px; border: 2px dotted #001f3f; text-align: center;}
+.outdoor-body img{ width:300px; height: 250px; transition: 1s;}
+.outdoor-body img:hover{opacity: .9; transform: scale(1.1);  }
+
+
+#amazon-buy a{ text-decoration: none; border: 1px solid black; padding:2px 5px; background-color: #419a1c; color: white; font-size: 16px;
+              letter-spacing: 2px; }
+#amazon-buy a:hover{color: blue;}
+ 
+
+ .diy_body  { text-align: center;  }          
+.diy_inside{display: flex; flex-wrap: wrap; text-align: center; }
+.diy1 {flex:1 ; }
+.diy2 {flex: 1;}
+.diy3{flex: 1;}
+
+
+
+.about-us{ background-color: #419a1c; color: white; padding: 10px 100px; margin-bottom: 0px;}
+.about-us h2 {text-align: center; font-size: 16px;}
+.about-us p{  word-spacing: 2px; letter-spacing: 2px; font-size: 13px; text-align: justify;}
+
+.footer{background-color: #419a1c; color:white; width: 100%; border: 1px solid white;
+         font-size: 12px; display: inline-flex; padding-left: 20px; box-shadow: 1px 1px 1px 0px white}
+.footer a{  text-decoration: none; color: white; font-size: 12px; padding-left: 250px; }
+.footer a:hover{color: black;}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50px;
+  background-color: #555;
+}
+
+#myBtn:hover {
+  background-color: #419a1c; /* Add a dark-grey background on hover */
+}
+  
+
+
+
+
+
+ 
+
+
